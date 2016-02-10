@@ -4,7 +4,7 @@ var net = require("net");
 var server = net.createServer(respond);
 
 function respond(socket){
-	d = newDate();
+	d = new Date();
 	socket.end(d.toString());
 }
 
